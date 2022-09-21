@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { signIn, useSession } from "next-auth/react"
+import Link from "next/link"
 
 export default function ProtectedPage() {
   const { data: session, status } = useSession()
@@ -28,7 +29,7 @@ export default function ProtectedPage() {
       <div>
         <h1>Access Denied</h1>
         <p>
-          <a
+          <Link
             href="/api/auth/signin"
             onClick={(e) => {
               e.preventDefault()
@@ -36,7 +37,7 @@ export default function ProtectedPage() {
             }}
           >
             sign in
-          </a>
+          </Link>
         </p>
       </div>
     )
