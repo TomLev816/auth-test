@@ -10,7 +10,7 @@ export default async function protectedHandler(
   if (session) {
     return res.send({
       content:
-        "This is protected content. Tom, you can access this content because you are signed in.",
+        "This is protected content. You can access this content because you are signed in.",
     })
   }
 
