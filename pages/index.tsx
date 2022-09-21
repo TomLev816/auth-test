@@ -22,17 +22,17 @@ const Home: NextPage = () => {
           <ul>
             <li>
               <Link href="/me ">
-                <a>Me</a>
+                <div>Me</div>
               </Link>
             </li>
             <li>
               <Link href="/protected">
-                <a>Protected</a>
+                <div>Protected</div>
               </Link>
             </li>
             <li>
               <Link href="/admin">
-                <a>Admin</a>
+                <div>Admin</div>
               </Link>
             </li>
           </ul>
@@ -47,8 +47,6 @@ const Home: NextPage = () => {
         </div>
       )}
       </main>
-
-
     </div>
   )
 }
